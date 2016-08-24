@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import os
-import requests
+import urllib2
 import ConfigParser
 
-response = requests.get('')
+response = urllib2.urlopen('https://raw.githubusercontent.com/mplociennik/testConfig/master/config.cfg')
+print response
